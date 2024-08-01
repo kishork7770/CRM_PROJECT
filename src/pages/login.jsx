@@ -47,7 +47,7 @@ function Login() {
     return (
         <div>
             <form onSubmit={handleSubmit(login)}>
-                <div className="main grid grid-cols-2">
+                <div className="main grid grid-cols-1">
                     <div className="flex justify-center mt-24">
                         <div className="">
                             <div>

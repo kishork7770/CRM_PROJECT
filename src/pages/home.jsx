@@ -2,7 +2,7 @@ import '../styles/home.css';
 import { LineChart } from '@mui/x-charts/LineChart';
 function Home() {
     const user = JSON.parse(localStorage.getItem('user'));
-    console.log(user);
+ 
     return (
         <div className='homeBody'>
             <div className="p-10">

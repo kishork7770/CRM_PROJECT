@@ -1,21 +1,19 @@
-.main{
-    height: 100vh;
-    font-family: sans-serif;
-    background-image: url(../assets/pattern1.png);
+.main {
+  height: 100vh;
+  font-family: sans-serif;
+  background-image: url(../assets/pattern1.png);
 }
-.card{
-    background-color: white;
+.card {
+  background-color: white;
 }
-input{
-    border: solid black 1px;
+input {
 }
-button{
-    width: 100%;
+button {
+  width: 100%;
 }
-h1{
-    color: #042D60;
-    width: 75%;
-    font-weight: 700;
-    font-size: 35px;
-    
+h1 {
+  color: #042d60;
+  width: 75%;
+  font-weight: 700;
+  font-size: 35px;
 }

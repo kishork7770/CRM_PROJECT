@@ -19,14 +19,15 @@ function createlead(props) {
 
     return (
         <div id="modal" className="modal fixed  inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center ">
-            <div className="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all max-w-lg w-full p-5">
-                <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
+            <div className="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all w-9/12 ">
+                <h2 className="text-2xl  text-left shadow-lg"><i class="fa-solid fa-id-card rounded-none bg-white"></i>Create Lead</h2>
+                <div className="p-5">
                 <form onSubmit={handleSubmit(newLead)}>
-                    <div className="flex ">
+                    <div className="flex">
                         <div className="m-2">
                             <div className="mb-4">
                                 <label htmlFor="name" className="block text-gray-700">Full Name</label>
-                                <input {...register('name')} type="text" id="name" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="John Doe" required/>
+                                <input {...register('name')} type="text" id="name" className="w-full px-4 py-2 border-none hover:border-b-2" placeholder="John Doe" required/>
                             </div>
                             <div className="mb-4">
                                 <label htmlFor="email" className="block text-gray-700">Email</label>
@@ -60,10 +61,15 @@ function createlead(props) {
                             </div>
                         </div>
                     </div>
-                    <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400" onClick={() => register()}>Create Lead</button>
+                    <div className="text-center">   
+                        
+                    <button type="submit" className="w-max bg-blue-500 text-white py-2 px-3 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400" onClick={() => register()}>Create Lead</button>
+                    <button className="w-max  ml-3 py-2 px-3 bg-gray-500 text-white py-2 rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400" onClick={() => setIsModelOpen(false)} >Close</button>
+            
+                    </div>
                 </form>
-                <button className="mt-4 w-full bg-gray-500 text-white py-2 rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400" onClick={() => setIsModelOpen(false)} >Close</button>
-            </div>
+                </div>
+               </div>
         </div>
     )
 }

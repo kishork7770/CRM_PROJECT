@@ -1,0 +1,50 @@
+.homeBody{
+    
+        height: 100vh;
+        font-family: sans-serif;
+        background-color: #a8a8a818;
+    
+}
+i{
+    font-size: x-large;
+    padding: 20px;
+    background-color: #a8a8a818 ;
+    border-radius: 50%;
+    color: blue;
+}
+.cards{
+    background-color: white;
+    margin: 0px 25px;
+    padding: 20px 8px;
+    border-radius: 10px;
+
+}
+.profile{
+    
+    position: relative;
+}
+.plus{
+    background:none;
+    padding: 0;
+    font-size: 15px;
+    position: absolute;
+    left: 685px;
+    top:220px;
+}
+
+.minus{
+    background:none;
+    padding: 0;
+    font-size: 15px;
+    position: absolute;
+    left: 975px;
+    top:220px;
+}
+.leadCards h3{
+    color:#565252ee
+}
+.leadCards h6{
+    font-weight: 400;
+    font-size: 20px;
+}
+
